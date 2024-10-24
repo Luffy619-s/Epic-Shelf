@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: "Edu VIC WA NT Beginner", cursive;
+        }
+        h3{
+            font-family: "New Amsterdam", sans-serif;
+            
+        }
+       
+       .col-4 img{
+        height: 350px;
+       } 
+       footer{
+        height: 150px;
+       }
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
+        <div class="container-fluid ">
+          <a class="navbar-brand fw-bold" href="#">Epic<span style="color: brown;">Shelf</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex " role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success me-5" type="submit">Search</button>
+            </form>
+              <div class="d-flex flex-sm-column text-center mt-3" >
+                <i class="fa-regular fa-heart mx-3 fs-5"></i>
+                <p>Wishlist</p>
+              </div>
+              <div class="d-flex flex-sm-column text-center mt-3" >
+                <i class="fa-solid fa-cart-shopping mx-3 fs-5"></i>              
+                <p>cart</p>
+              </div>
+              <div class="d-flex flex-sm-column text-center mt-3" >
+                <i class="fa-solid fa-user mx-3 fs-5"></i>             
+                 <p>profile</p>
+              </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-5">
+                <a class="nav-link active" aria-current="page" href="#">Books</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Fiction</a>
+              </li>
+              <li class="nav-item ms-5 ">
+                <a class="nav-link " href="#" >Non-Fiction</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Audiobooks</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Teens $ YA</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Best Seller</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">New releases</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Signed Edition</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Romantic</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- slide -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=""><img src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2024/08/16/30228_BB_B_Book_Haul_YA_08_16_24.jpg" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2024/07/30/30048_Quote_A1_BookClubAugust_07_30_24.jpg" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2024/08/14/30150_BB_D_AugOMP_08_14_24.jpg" class="d-block w-100" alt="..."></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <h3 class="text-center mt-4 fw-bold">New Trending</h3>
+      <div class="row mt-4">
+        <div class="col-2 ms-3 ">
+            <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/pimages/9780525648154_p0_v2_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body te">
+              <h5 class="card-title">House of Dragons</h5>
+              <p class="card-text">  by Jessica Cluess <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div></div>
+
+        <div class="col-2 ms-5 " >
+             <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/pimages/9781368104807_p0_v17_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body te">
+              <h5 class="card-title">The Book Of Bill</h5>
+              <p class="card-text">  by Jessica Cluess <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9781501110368_p0_v14_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">It Ends With Us</h5>
+                  <p class="card-text">  by Jessica Cluess <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+        
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9781538756591_p0_v2_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">Too Late: Definitive Edition</h5>
+                  <p class="card-text">  by Colleen Hoover <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9780765389220_p0_v2_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">Starter Villain</h5>
+                  <p class="card-text">  by John Scalzi <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+        </div>
+      </div><br>
+      <hr>
+
+
+      <h3 class="text-center mt-4 fw-bold">Best Fiction Books</h3> <hr><br>
+      <div class="row mt-4">
+        <div class="col-2 ms-3 ">
+            <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/pimages/9781250337320_p0_v3_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body te">
+              <h5 class="card-title">Empire of the Damned (B&N Exclusive Edition)</h5>
+              <p class="card-text">  by Jay Kristoff                <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div></div>
+
+        <div class="col-2 ms-5 " >
+             <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/pimages/9780778308065_p0_v7_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body te">
+              <h5 class="card-title">She's Not Sorry: A Psychological Thriller</h5>
+              <p class="card-text">  by Mary Kubica <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9781649375704_p0_v4_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">Heavenbreaker (Deluxe Limited Edition)
+                    </h5>
+                  <p class="card-text">  by Sara Wolf <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+        
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9780593599839_p0_v18_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">A Fate Inked in Blood: Book One of the Saga of the Unfated
+                    </h5>
+                  <p class="card-text">  by Danielle L. Jensen <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9780316566537_p0_v1_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">The Foxglove King (B&N Exclusive Edition)</h5>
+                  <p class="card-text">  by Hannah Whitten <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+        </div>
+      </div><hr>
+
+      <h3 class="text-center mt-4 fw-bold">Romance</h3> <hr><br>
+      <div class="row  justify-content-evenly">
+        <div class="col-2 ms-3 ">
+            <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781668026250_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body te">
+              <h5 class="card-title">Daydream (Maple Hills Series #3)</h5>
+              <p class="card-text">  by Hannah Grace            <br>  <span style="color: blue; text-align: center;">$10</span> </p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div></div>
+
+        <div class="col-2 ms-5 " >
+             <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/pimages/9780593818879_p0_v1_s600x595.jpg" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body te">
+              <h5 class="card-title">Not in Love </h5><br>
+              <p class="card-text">  by Ali Hazelwood <br>  <span style="color: blue; text-align: center;">$15</span> </p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9781649375704_p0_v4_s1200x1200.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">Heavenbreaker(Limited Edition)</h5>
+                  <p class="card-text">by Sara Wolf <br>  <span style="color: blue; text-align: center;">$90</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+        
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9781250321619_p0_v2_s600x595.jpg " class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">Heartsong
+                    </h5><br>
+                  <p class="card-text">  by TJ Klune <br>  <span style="color: blue; text-align: center;">$20</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-2 ms-5">
+            <div class="card" style="width: 15rem;">
+                <a href=""><img src="https://prodimage.images-bn.com/pimages/9781639107735_p0_v1_s600x595.jpg" class="card-img-top" alt="..." height="300px" ></a>
+                <div class="card-body te">
+                  <h5 class="card-title">Hearts on Thin Ice: A Novel</h5>
+                  <p class="card-text">  by Katie Kennedy <br>  <span style="color: blue; text-align: center;">$16</span> </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+        </div>
+      </div>
+      <!-- slide -->
+      <h2 class="text-center mt-4 fw-bold">Manga Mania: 15% off Online</h2>
+      <p class="text-center"><i>Dive Into Discounts Across Our Diverse Manga Library</i></p>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://imgs.search.brave.com/vNN7siORpNuBoi360LMdKGkt7Rq59TGXgtZ4lgwbufk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93b3R0/YXJlYWQuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy9vbmUtcGll/Y2UtbWFuZ2Etdm9s/dW1lcy53ZWJw" height="500px" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imgs.search.brave.com/D2igs1ZuIyyUt9O6lYQ9cch88nM0bP2N0LBc34i0OiU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym9va3Jldmlld3Mu/dHYvaG9zdGVkX2lt/YWdlcy9OYXJ1dG8t/TWFuZ2EtQm94LTEv/TmFydXRvLU1hbmdh/LUJveC1TZXQtMS0y/LTMtQm9va1Jldmll/d3NUVi0xLmpwZw" height="500px" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br><hr>
+       <h2 class="text-center mt-4 fw-bold">Shop by Series</h2><hr><br>
+      <div class="row d-flex ms-4  mt-3">
+
+        <div class="col-3  ">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781612626154_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text"> Attack on Titan (All Volumes) </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 ">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/pimages/9781974724246_p0_v1_s192x300.jpg" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text"> Chainsaw Man (All Volumes) </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781974704682_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text"> Demon Slayer (All Volumes) </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 ">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781974728138_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text"> Jujutsu Kaisen (All Volumes) </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex ms-4 mt-3">
+
+        <div class="col-3  ">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781421585956_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text"> My Hero Academia (All Volumes) </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 ">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781974728176_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text">SpyXFamily (All Volumes) </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781421567495_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text"> One-Punch Man </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 ">
+          <div class="card" style="width: 15rem;">
+            <a href=""><img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781642125153_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" class="card-img-top" alt="..." height="300px" ></a>
+            <div class="card-body">
+              <p class="card-text"> Tokyo Revengers (All Volumes) </p>
+            </div>
+          </div>
+        </div>
+      </div><hr>
+
+
+      <h2 class="text-center">About Us</h2><hr>
+      <div class="row w-100 d-flex justify-content-evenly">
+        <div class="col-6 ms-5 " >Welcome to Epic Shelf! Our passion for books drives us to connect readers with their next great read. Epic Shelf was born from a deep love of literature and a vision to create an accessible, curated space for book enthusiasts. Our team of avid readers and professionals is dedicated to offering a diverse selection of titles, from bestsellers to hidden gems. We pride ourselves on exceptional service, personalized recommendations, and supporting the literary community. Whether you're hunting for a new release or a timeless classic, Epic Shelf is here to make your book-buying experience seamless and enjoyable. Join us in celebrating the joy of reading and find your next favorite book with us today!
+          Our journey began with a simple yet profound love for literature. We envisioned a platform where book lovers could easily find their next great read, supported by a team that shares their passion. Our dedicated staff, made up of avid readers and literary enthusiasts, works tirelessly to ensure that every book we offer meets our high standards of quality and relevance.
+
+What sets Epic Shelf apart is our commitment to providing a personalized and enjoyable shopping experience. We use advanced recommendation tools and in-depth knowledge to help you discover books that perfectly match your interests. Our user-friendly website, fast shipping, and responsive customer service are all designed to make your book-buying journey as smooth as possible.
+        </div>
+        <div class="col-4 ms-4 float-end"><img src="https://imgs.search.brave.com/-uhobY04zWI4XFYSul-6GcunqOKweyc4UEr9hqStDv4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTU5/NzYxMjQyL3Bob3Rv/L3N0dWRlbnQtY2hv/b3NpbmctYS1ib29r/LW9uLWxpYnJhcnku/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWNHVWh4RWR6U2J3/R0VTNHpsQi1MeXdo/Y19tZWlXd2hZS3NE/YUZoMk9Eb009" alt=""></div>
+      </div>
+      <!-- <div class="col-2 "></div> --> <hr>
+      <h2 class="text-center">Contact Us</h2><hr>
+      <div class="row d-flex  ">
+        
+        <div class="col-6"><img src="https://imgs.search.brave.com/OtE4yg5grhEQYqnv73-SFSreDpjCNH-XF97Ibt0jMsU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvaWxsdXN0cmF0/aW9uLXZlY3Rvci1n/cmFwaGljLWNhcnRv/b24tY2hhcmFjdGVy/LWNvbnRhY3QtdXNf/NTE2NzkwLTIxOTIu/anBnP3NpemU9NjI2/JmV4dD1qcGc" alt=""></div>
+        <div class="col-6 " >
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="" class="form-control" id="message"></textarea>            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="col-2 "></div> --> 
+<footer class="bg-light ">
+  <h3 class="text-center fw-bold">Stay Connected</h3>
+  <p class="text-center">Follow us on our social media accounts to get the latest updates,exclusive offers,and book recommendations!</p>
+  <section class="d-flex justify-content-evenly">
+  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png" alt=" " height="30px" >
+  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png" alt=" " height="30px">
+  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Whatsapp2_colored_svg-128.png" alt=" " height="30px">
+  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter3_colored_svg-128.png" alt=" " height="30px">
+</section>
+</footer>
+       
+    
+</body>
+</html>
